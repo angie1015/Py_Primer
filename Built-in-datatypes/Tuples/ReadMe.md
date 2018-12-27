@@ -13,14 +13,32 @@ Tuples may be constructed in a number of ways:
  *  Separating items with commas: `a, b, c` or `(a, b, c)`
  *  Using the `tuple()` built-in: `tuple()` or `tuple(iterable)`
 
-The constructor builds a tuple whose items are the same and in the same order as *iterable*’s items.
- *iterable* may be either a sequence, a container that supports iteration, or an iterator object.
- If iterable is already a tuple, it is returned unchanged.
- For example,
-* `tuple('abc')` returns `('a', 'b', 'c')` 
-* `tuple( [1, 2, 3] )` returns `(1, 2, 3)`.
+ Examples
+ 1. Input: 
+ ```
+ x=tuple('abc')  
+ print(x)
+ ``` 
+   
+   Output: `('a', 'b', 'c')` 
+ 
+ 2. Input: 
+```
+ y=tuple( [1, 2, 3] )  
+ print(y)
+```
+    
+    
+  Output: `(1, 2, 3)`
+ 
+ 3. Input: 
+ ```
+              z=tuple()  
+              print(z)
+ ```
+ Output: 
+    `()`
 
-If no argument is given, the constructor creates a new empty tuple, `()`.
 
 **Note:** It is actually the comma which makes a tuple, not the parentheses. The parentheses are optional, except in the empty tuple case, or when they are needed to avoid syntactic ambiguity. 
 For example, `f(a, b, c)` is a function call with three arguments, while `f((a, b, c))` is a function call with a tuple as the single argument.
