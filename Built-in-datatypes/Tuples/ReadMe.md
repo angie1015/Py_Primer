@@ -15,7 +15,7 @@ Tuples may be constructed in a number of ways:
 
  Examples
  1. Input: 
- ```
+ ```python
  x=tuple('abc')  
  print(x)
  ``` 
@@ -23,7 +23,7 @@ Tuples may be constructed in a number of ways:
    Output: `('a', 'b', 'c')` 
  
  2. Input: 
-```
+```python
  y=tuple( [1, 2, 3] )  
  print(y)
 ```
@@ -32,7 +32,7 @@ Tuples may be constructed in a number of ways:
   Output: `(1, 2, 3)`
  
  3. Input: 
- ```
+ ```python
               z=tuple()  
               print(z)
  ```
@@ -41,4 +41,4 @@ Tuples may be constructed in a number of ways:
 
 
 **Note:** It is actually the comma which makes a tuple, not the parentheses. The parentheses are optional, except in the empty tuple case, or when they are needed to avoid syntactic ambiguity. 
-For example, `f(a, b, c)` is a function call with three arguments, while `f((a, b, c))` is a function call with a tuple as the single argument.
+
